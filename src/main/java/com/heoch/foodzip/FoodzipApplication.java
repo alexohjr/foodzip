@@ -9,6 +9,7 @@ public class FoodzipApplication {
 	public static void main(String[] args) {
 		// 멈머 첫 커밋
 		SpringApplication.run(FoodzipApplication.class, args);
+		//냥냥 :)
 	}
 
 }
