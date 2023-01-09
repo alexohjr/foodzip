@@ -1,5 +1,8 @@
 package com.heoch.foodzip;
 
+import com.fasterxml.jackson.databind.JsonSerializable;
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import jdk.nashorn.internal.parser.JSONParser;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +17,6 @@ public class TestController {
     @GetMapping("/say")
     public String sayHello(Model model) {
         model.addAttribute("say", "Hello");
-//        ModelAndView mav = new ModelAndView();
-//        mav.addObject("say", "hello");
-//        mav.setViewName("test");
-        return "test";
+        return "views/member/test";
     }
 }
