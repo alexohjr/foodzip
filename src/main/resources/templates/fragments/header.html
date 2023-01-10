@@ -23,12 +23,7 @@
         <!--        <script th:src="@{/webjars/jquery/3.4.1/jquery.js}"></script>-->
 
         <script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
-        <script type="text/javascript">
-        $(function() {
-            alert("gdgd");
-            console.log("123");
-        });
-    </script>
+        <script th:src="@{/js/common/common.js}"></script>
     </head>
 
     <!--    <header class="bg-gray text-black text-center p-5">-->
@@ -53,6 +48,8 @@
                 <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">JOIN</a></li>
             </ul>
+
+            <button id="toggle-btn">toggle</button>
 
         </div>
 
