@@ -1,5 +1,5 @@
 body {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 #header {
@@ -24,10 +24,18 @@ body {
 }
 
 #sidebar {
-     float: left;
      position: fixed;
      height: 100%;
      border: 1px solid #ccc;
+     overflow-y: scroll;
+     -webkit-transition: all .3s;
+     -o-transition: all .3s;
+     transition: all .3s;
+     background-color: black;
+}
+
+#sidebar.off {
+    margin-left: -280px;
 }
 
 #content-wrapper {
@@ -47,4 +55,3 @@ body {
     width: 100%;
     opacity: 0.3;
 }
-
