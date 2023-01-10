@@ -3,19 +3,24 @@
 
 <!-- Head -->
 <th:block th:fragment="headerFragment">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        .... head 태그 코드 작성
-
-<!--        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />-->
-<!--        <link th:href="@{/bootstrap/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css" />-->
-        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
-        <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
-
-<!--        <link rel="stylesheet" href="/css/bootstrap.min.css"/>-->
+        <!--   locator 사용으로 버전 명시 불필요     -->
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.css}" />
+<!--        <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/6.2.0/css/all.css" />-->
+<!--        <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/vendor/fontawesome-free/css/all.min.css}"  />-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
 
     </head>
+s
+    <header class="bg-gray text-black text-center p-5">
+        HEADER
+    </header>
+
 </th:block>
+
 </html>

@@ -14,9 +14,12 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/test")
 public class TestController {
 
-    @GetMapping("/say")
+    @GetMapping("")
     public String sayHello(Model model) {
         model.addAttribute("say", "Hello");
-        return "views/member/test";
+        return "test";
     }
+
+
+
 }
