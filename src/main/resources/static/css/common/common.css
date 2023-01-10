@@ -1,0 +1,50 @@
+body {
+    overflow-y: hidden;
+}
+
+#header {
+    width: 100%;
+    position:fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#header > #loginMenu {
+    float: right;
+}
+
+#header .login-area {
+    margin-left: auto;
+}
+
+
+#wrapper {
+    padding-top: 56px;
+    /* padding-left: 371px; */
+}
+
+#sidebar {
+     float: left;
+     position: fixed;
+     height: 100%;
+     border: 1px solid #ccc;
+}
+
+#content-wrapper {
+    /* padding-left: 280px; */
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    opacity: 0.3;
+}
+

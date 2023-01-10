@@ -11,14 +11,57 @@
         <!--   locator 사용으로 버전 명시 불필요     -->
         <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
         <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.css}" />
-<!--        <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/6.2.0/css/all.css" />-->
-<!--        <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/vendor/fontawesome-free/css/all.min.css}"  />-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+        <!--        <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/6.2.0/css/all.css" />-->
+        <!--        <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/vendor/fontawesome-free/css/all.min.css}"  />-->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
 
+        <!-- common css -->
+        <link rel="stylesheet" type="text/css" th:href="@{/css/common/common.css}" />
+
+        <!-- common script -->
+        <!--        <script th:src="@{/webjars/jquery/3.4.1/jquery.js}"></script>-->
+
+        <script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+        <script type="text/javascript">
+        $(function() {
+            alert("gdgd");
+            console.log("123");
+        });
+    </script>
     </head>
-s
-    <header class="bg-gray text-black text-center p-5">
-        HEADER
+
+    <!--    <header class="bg-gray text-black text-center p-5">-->
+    <!--        HEADER-->
+    <!--    </header>-->
+
+    <header class="navbar navbar-expand navbar-dark bg-dark bd-navbar" id="header">
+        <a class="navbar-brand" href="#">FoodZip</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">MENU</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+            </ul>
+
+            <ul class="navbar-nav login-area">
+                <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JOIN</a></li>
+            </ul>
+
+        </div>
+
+        <!-- <div class="collapse navbar-collapse" id="loginMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">LOGIN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JOIN</a></li>
+            </ul>
+        </div> -->
     </header>
 
 </th:block>
