@@ -1,51 +1,29 @@
-<!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- common styles -->
+<th:block th:replace="common/styles :: stylesFragment"></th:block>
 
-    <!--   locator 사용으로 버전 명시 불필요     -->
-    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
-    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.css}" />
-    <!--        <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/6.2.0/css/all.css" />-->
-    <!--        <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/vendor/fontawesome-free/css/all.min.css}"  />-->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
-
-    <!-- common css -->
-    <link rel="stylesheet" type="text/css" th:href="@{/css/common/common.css}" />
-    <th:block layout:fragment="style"></th:block>
-
-    <!-- common script -->
-    <!--        <script th:src="@{/webjars/jquery/3.4.1/jquery.js}"></script>-->
-
-<!-- 공통 헤드-->
+<!-- header -->
 <th:block th:replace="fragments/header :: headerFragment"></th:block>
 
 <body id="page-top">
 
-<div id="wrapper">
-  <!-- 사이드바-->
-  <th:block th:replace="fragments/sidebar :: sidebarFragment"></th:block>
+    <div id="wrapper">
 
-  <div id="content-wrapper" class="d-flex flex-column">
+      <!-- sidebar -->
+      <th:block th:replace="fragments/sidebar :: sidebarFragment"></th:block>
 
-    <div id="content">
-
-      <!-- 본문-->
-      <th:block layout:fragment="content"></th:block>
-
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          <!-- content -->
+          <th:block layout:fragment="content"></th:block>
+        </div>
+      </div>
     </div>
 
-    <!-- 공통 하단-->
-    <!-- <th:block th:replace="fragments/footer :: footerFragment"></th:block> -->
-  </div>
-</div>
+    <!-- common scripts -->
+    <th:block th:replace="/common/scripts :: scriptsFragment"></th:block>
 
-<!-- 공통 스크립트-->
-<!--<th:block th:replace="/layout/fragments/script :: scriptFragment"></th:block>-->
-<script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
-<script th:src="@{/js/common/common.js}"></script>
-<th:block layout:fragment="script" />
 </body>
+
 </html>
