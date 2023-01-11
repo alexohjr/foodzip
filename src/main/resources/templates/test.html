@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/default}">
-<th:block layout:fragment="content">
+    <th:block layout:fragement="style">
+        <link rel="stylesheet" type="text/css" th:href="@{/css/test.css}" />
+    </th:block>
 
-    <div class="bg-primary text-white text-center p-5">
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <h1>CONTENT</h1>
-        <span th:text="${say}"></span>
-    </div>
+    <th:block layout:fragment="content">
+        <div class="bg-primary text-white text-center p-5">
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <h1>CONTENT</h1>
+            <span th:text="${say}"></span>
+        </div>
+    </th:block>
 
-</th:block>
+    <th:block layout:fragment="script">
+        <script th:src="@{/js/test.js}"></script>
+    </th:block>
 
 </html>
