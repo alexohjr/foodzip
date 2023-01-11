@@ -1,0 +1,15 @@
+
+#header {
+    width: 100%;
+    position:fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#header > #loginMenu {
+    float: right;
+}
+
+#header .login-area {
+    margin-left: auto;
+}

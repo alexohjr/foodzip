@@ -2,40 +2,9 @@ body {
     /* overflow-y: hidden; */
 }
 
-#header {
-    width: 100%;
-    position:fixed;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#header > #loginMenu {
-    float: right;
-}
-
-#header .login-area {
-    margin-left: auto;
-}
-
-
 #wrapper {
     padding-top: 56px;
     /* padding-left: 371px; */
-}
-
-#sidebar {
-     position: fixed;
-     height: 100%;
-     border: 1px solid #ccc;
-     overflow-y: auto;
-     -webkit-transition: all .3s;
-     -o-transition: all .3s;
-     transition: all .3s;
-     background-color: black;
-}
-
-#sidebar.off {
-    margin-left: -280px;
 }
 
 #content-wrapper {
@@ -47,7 +16,7 @@ body {
     width: 100%;
 }
 
-#footer {
+/** #footer {
     position: absolute;
     bottom: 0;
     height: 50px;
@@ -55,21 +24,5 @@ body {
     width: 100%;
     opacity: 0.3;
 }
+**/
 
-#sidebar-toggle-btn {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 70px;
-    background: #dc3545;
-    left: 280px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    border: none;
-    border-radius: 10px;
-}
-
-#sidebar-toggle-btn.off {
-    margin-left: -280px;
-}
