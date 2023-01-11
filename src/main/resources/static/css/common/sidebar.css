@@ -1,0 +1,32 @@
+#sidebar {
+     position: fixed;
+     height: 100%;
+     border: 1px solid #ccc;
+     overflow-y: auto;
+     -webkit-transition: all .3s;
+     -o-transition: all .3s;
+     transition: all .3s;
+     background-color: black;
+}
+
+#sidebar.off {
+    margin-left: -280px;
+}
+
+#sidebar-toggle-btn {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 70px;
+    background: #dc3545;
+    left: 280px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border: none;
+    border-radius: 10px;
+}
+
+#sidebar-toggle-btn.off {
+    margin-left: -280px;
+}
