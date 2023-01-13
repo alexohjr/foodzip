@@ -1,19 +1,20 @@
 #sidebar {
-     position: fixed;
-     height: 100%;
-     border: 1px solid #ccc;
-     overflow-y: auto;
-     -webkit-transition: all .3s;
-     -o-transition: all .3s;
-     transition: all .3s;
-     background-color: black;
-     border: none;
-     /* padding-top: 20px; */
-     width: 280px;
+    position: fixed;
+    height: 100%;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background-color: black;
+    border: none;
+    /* padding-top: 20px; */
+    width: 280px;
+    border-right: 1px solid gray;
 }
 
 #sidebar.off {
-    width: 52px;
+    width: 71px;
     /* margin-left: 180px; */
 }
 
@@ -33,76 +34,17 @@
 
 #sidebar-toggle-btn.off {
     /* margin-left: -180px; */
-    left: 38px;
+    left: 57px;
 }
 
 #sidebar-toggle-btn i {
     color: gray;
     font-size: 35px;
-
 }
 
-#sidebar-icon-area {
-    height: 100%;
-    width: 50px;
-    float: left;
-}
-
-.icon-tabs {
-    display: block;
-    text-align: center;
-}
-
-.icon-tabs li i {
-    font-size: 40px;
-    color: black;
-}
-
-#sidebar-tab-area {
-    float: left;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    width: 230px;
-    height: 100%;
-    /* background-color: gray; */
-    transition: all .3s;
-    border-right: 2px solid gray;
-}
-
-#sidebar-tab-area.off {
-    /* margin-left: 100px; */
-    width: 0px;
-    /* display: none; */
-}
-
-.sidebar-tab {
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color: blueviolet;
-}
-
-.sidebar-tab.active {
-    display: block;
-}
-
-.sidebar-tab#b {
-    background-color: green;
-}
-
-.icon-tabs li {
-    display: table;
-    margin: auto;
-    margin-top: 20px;
-}
-.icon-tabs li.active {
-}
-.icon-tabs li a {
-    display: table-cell;
-    color: white;
-}
-
-.icon-tabs li i {
-    vertical-align: middle;
+#sidebar button.nav-link {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    border-radius: 0;
 }

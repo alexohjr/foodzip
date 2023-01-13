@@ -3,4 +3,6 @@ $(function() {
         $("#sidebar-tab-area, #sidebar").toggleClass("off");
         $(this).toggleClass("off");
     });
+
+
 });
