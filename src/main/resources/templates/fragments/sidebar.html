@@ -4,68 +4,33 @@
 <th:block th:fragment="sidebarFragment">
 
     <div class="bg-white" id="sidebar">
-        <div class="bg-white" id="sidebar-icon-area">
-            <ul class="nav icon-tabs">
-                <!-- <li class="active">
-                    <a href="#a"
-                        class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                        <i class='bx bx-layer nav_logo-icon'></i>
-                    </a>
-                </li> -->
-                <li class="active">
-                    <a href="#a" data-toggle="collapse" data-bs-toggle=“tab” class="nav_link active">
-                        <i class='bx bx-search'></i>
-                        <!-- <i class='bx bx-layer nav_logo-icon'></i> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#b" data-toggle="collapse" data-bs-toggle=“tab”>
-                        <!-- <i class='bx bx-grid-alt nav_icon'></i> -->
-                        <i class='bx bx-star' ></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#c" data-toggle="tab" data-bs-toggle=“tab”>
-                        <!-- <i class='bx bx-layer nav_logo-icon'></i> -->
-                        <i class='bx bx-user' ></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#d" data-toggle="tab" data-bs-toggle=“tab”>
-                        <i class='bx bx-cog' ></i>
-                        <!-- <i class='bx bx-layer nav_logo-icon'></i> -->
-                    </a>
-                </li>
-             </ul>
-        </div>
 
-        <div id="sidebar-tab-area" class="tab-content">
-
-            <!-- <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                test1
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class='bx bx-search'></i>
+                </button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class='bx bx-star' ></i>
+                </button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <i class='bx bx-user' ></i>
+                </button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class='bx bx-cog' ></i>
+                </button>
             </div>
-
-            <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                test2
-            </div> -->
-
-            <div class="sidebar-tab tab-pane container active" id="a">
-
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                나는 검색이양
+                </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                나는 별이양
+                </div>
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
             </div>
-
-            <div class="sidebar-tab tab-pane container fade" id="b">
-
-            </div>
-
-            <div class="sidebar-tab" id="c">
-
-            </div>
-
-            <div class="sidebar-tab" id="d">
-
-            </div>
-
-        </div>
+          </div>
 
     </div>
 
