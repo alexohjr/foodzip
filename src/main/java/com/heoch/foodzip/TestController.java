@@ -15,6 +15,11 @@ public class TestController {
         return "test";
     }
 
+    @GetMapping("/test")
+    public String bootstrapTest() {
+        return "bootstrap";
+    }
+
 
 
 }
