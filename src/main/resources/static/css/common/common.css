@@ -3,7 +3,7 @@ body {
 }
 
 #wrapper {
-    padding-top: 56px;
+    /* padding-top: 56px; */
     /* padding-left: 371px; */
 }
 
@@ -26,3 +26,6 @@ body {
 }
 **/
 
+html, body, * {
+    color: #696969;
+}
