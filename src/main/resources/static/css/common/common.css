@@ -1,19 +1,25 @@
 body {
     /* overflow-y: hidden; */
+    /* width: 100%;
+    height: 100%; */
 }
 
 #wrapper {
     /* padding-top: 56px; */
     /* padding-left: 371px; */
+    /* width: 100%;
+    height: 100%; */
 }
 
 #content-wrapper {
     /* padding-left: 280px; */
-    width: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 #content {
-    width: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 /** #footer {
@@ -28,4 +34,9 @@ body {
 
 html, body, * {
     color: #696969;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
 }
