@@ -7,6 +7,9 @@
 </th:block>
 
     <th:block layout:fragment="content">
+        <div id="map">
+
+        </div>
         <!-- <div class="bg-primary text-white text-center p-5">
             <h1>CONTENT</h1>
             <h1>CONTENT</h1>
@@ -20,6 +23,7 @@
 
 <!-- page script -->
 <th:block layout:fragment="script">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1ejgdmtjix"></script>
     <script th:src="@{/js/test.js}"></script>
 </th:block>
 
