@@ -3,10 +3,11 @@
 
 <th:block th:fragment="sidebarFragment">
 
-    <div class="bg-white active" id="sidebar">
+    <div class="active" id="sidebar">
 
         <div class="d-flex align-items-start">
-            <div class="nav flex-column nav-pills me-3 bg-white" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <span class="sidebar-logo"><i class='bx bxs-dog'></i></span>
                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                     <i class='bx bx-search'></i>
                 </button>
@@ -25,6 +26,9 @@
 
             </div>
             <div class="tab-content active" id="v-pills-tabContent">
+                <div id="sidebar-header">
+                    <span>FoodZip</span>
+                </div>
                 <div class="tab-pane show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 나는 검색이양
                 </div>
