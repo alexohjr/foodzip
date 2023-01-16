@@ -5,9 +5,9 @@
     height: 100%;
     border: 1px solid #ccc;
     overflow-y: auto;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     /* background-color: black; */
     border: none;
     /* padding-top: 20px; */
@@ -18,7 +18,7 @@
 }
 
 #sidebar.active {
-    width: 330px;
+    width: 370px;
 }
 
 #sidebar .d-flex {
@@ -27,7 +27,7 @@
 
 #sidebar .sidebar-logo {
     text-align: center;
-    border-bottom: 1px solid #ababab;
+    border-bottom: 2px solid #ff8d0f;
     display: table;
     height: 100px;
 }
@@ -44,10 +44,10 @@
     width: 40px;
     height: 40px;
     top: 113px;
-    left: 65px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    left: 70px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     border: none;
     border-radius: 10px;
     background-color: transparent;
@@ -58,11 +58,11 @@
     /* margin-left: -180px; */
     /* left: 57px; */
 
-    left: 325px;
+    left: 370px;
 }
 
 #sidebar-toggle-btn i {
-    color: #a6a6a6;
+    color: #323232d1;
     font-size: 40px;
 }
 
@@ -86,13 +86,15 @@
 }
 
 #sidebar .tab-content {
-    margin-left: -70px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    margin-left: -300px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 
-    width: 100%;
+    width: 300px;
     height: 100%;
+
+    /* border-left: 2px solid #ff8d0f; */
 }
 #sidebar .tab-content.active {
     margin-left: 0px;
@@ -113,7 +115,7 @@
 }
 
 #sidebar-header {
-    width: 100%;
+    width: 300px;
     height: 100px;
     /* border-bottom: 1px dotted #a6a6a6; */
     display: table;
