@@ -1,4 +1,4 @@
-var toggleBtnIcon = $('#sidebar-toggle-btn i');
+let toggleBtnIcon = $('#sidebar-toggle-btn i');
 
 $(function() {
     $("#sidebar-toggle-btn").click(function() {
@@ -10,10 +10,29 @@ $(function() {
         $(this).toggleClass("active");
     });
 
-    $('#sidebar button.nav-link').not('active').click(function() {
+    $('#sidebar button.nav-link').click(function() {
 
-        $("#sidebar, #sidebar-toggle-btn").addClass("active");
-        $('.tab-content').addClass('active');
+        if($(this).hasClass('orange') && $('#sidebar').hasClass('active')) {
+            $("#sidebar").removeClass("active");
+            $('.tab-content').removeClass('active');
+            $('#sidebar-toggle-btn').removeClass('active');
+        } else if(!$(this).hasClass('orange') && !$('#sidebar').hasClass('active')) {
+            $("#sidebar").addClass("active");
+            $('.tab-content').addClass('active');
+            $('#sidebar-toggle-btn').addClass('active');
+            $('#sidebar button.nav-link').removeClass('orange');
+            $(this).addClass('orange');
+        } else if($(this).hasClass('orange') && !$('#sidebar').hasClass('active')) {
+            $("#sidebar").addClass("active");
+            $('.tab-content').addClass('active');
+            $('#sidebar-toggle-btn').addClass('active');
+        } else {
+            $('#sidebar button.nav-link').removeClass('orange');
+            $(this).addClass('orange');
+        }
+    });
+
+    $('#sidebar button.nav-link').not('active').click(function() {
 
         if($('#sidebar-toggle-btn').hasClass('active')) {
             toggleBtnIcon.addClass('bx-chevron-left');
