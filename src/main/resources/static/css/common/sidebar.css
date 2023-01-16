@@ -5,24 +5,20 @@
     height: 100%;
     border: 1px solid #ccc;
     overflow-y: auto;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     /* background-color: black; */
     border: none;
     /* padding-top: 20px; */
     width: 70px;
     /* border-right: 1px dotted #a6a6a6; */
     box-shadow: 1px 0px 3px 0px #696969;
-}
-
-#sidebar.off {
-    width: 70px;
-    /* margin-left: 180px; */
+    overflow-x: hidden;
 }
 
 #sidebar.active {
-    width: 280px;
+    width: 370px;
 }
 
 #sidebar .d-flex {
@@ -31,7 +27,7 @@
 
 #sidebar .sidebar-logo {
     text-align: center;
-    /* border-bottom: 1px dotted #a6a6a6; */
+    border-bottom: 2px solid #ff8d0f;
     display: table;
     height: 100px;
 }
@@ -47,32 +43,33 @@
     position: fixed;
     width: 40px;
     height: 40px;
-    top: 110px;
-    left: 57px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    top: 113px;
+    left: 70px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
     border: none;
     border-radius: 10px;
-    background-color:transparent;
+    background-color: transparent;
+    padding: 0;
 }
 
 #sidebar-toggle-btn.active {
     /* margin-left: -180px; */
     /* left: 57px; */
 
-    left: 266px;
+    left: 370px;
 }
 
 #sidebar-toggle-btn i {
-    color: #a6a6a6;
+    color: #323232d1;
     font-size: 40px;
 }
 
 #sidebar button.nav-link {
     width: 70px;
     height: 70px;
-    font-size: 35px;
+    font-size: 25px;
     border-radius: 0;
     color: #a6a6a6;
 }
@@ -89,13 +86,15 @@
 }
 
 #sidebar .tab-content {
-    margin-left: -122px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    margin-left: -300px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 
-    width: 100%;
+    width: 300px;
     height: 100%;
+
+    /* border-left: 2px solid #ff8d0f; */
 }
 #sidebar .tab-content.active {
     margin-left: 0px;
@@ -112,15 +111,15 @@
     /* border-right: 1px dotted #a6a6a6; */
     height: 100%;
     margin-right: 0px !important;
-    background-color: #696969;
+    background-color: #323232;
 }
 
 #sidebar-header {
-    width: 100%;
+    width: 300px;
     height: 100px;
     /* border-bottom: 1px dotted #a6a6a6; */
     display: table;
-    background-color: #696969;
+    background-color: #323232;
 }
 
 #sidebar-header span {
@@ -130,4 +129,5 @@
     font-size: 40px;
     font-family: 'Anton', sans-serif;
     color: #ff8d0f;
+    letter-spacing: 5px;
 }
