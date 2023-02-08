@@ -10,6 +10,6 @@ public class MainController {
 
     @GetMapping("")
     public String mainPage() {
-        return "test";
+        return "main";
     }
 }

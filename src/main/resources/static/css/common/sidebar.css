@@ -3,13 +3,14 @@
 #sidebar {
     position: fixed;
     height: 100%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
     width: 70px;
     overflow-x: hidden;
     z-index: 999;
+    overflow-y: hidden;
 
     border-right: 2px solid #ff8d10;
 }
