@@ -3,28 +3,17 @@
 
 
 <th:block layout:fragment="style">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/test.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
 </th:block>
 
     <th:block layout:fragment="content">
-        <div id="map">
-
-        </div>
-        <!-- <div class="bg-primary text-white text-center p-5">
-            <h1>CONTENT</h1>
-            <h1>CONTENT</h1>
-            <h1>CONTENT</h1>
-            <h1>CONTENT</h1>
-            <h1>CONTENT</h1>
-            <h1>CONTENT</h1>
-            <span th:text="${say}"></span>
-        </div> -->
+        <div id="map"></div>
     </th:block>
 
 <!-- page script -->
 <th:block layout:fragment="script">
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1ejgdmtjix"></script>
-    <script th:src="@{/js/test.js}"></script>
+    <script th:src="@{/js/main.js}"></script>
 </th:block>
 
 </html>
