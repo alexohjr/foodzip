@@ -14,11 +14,13 @@ $(function() {
     });
 
     sidebarMenu.click(function() {
+
         if($(this).hasClass('active-menu') || !sidebar.hasClass('active')) {
             sidebar.trigger('classChanged');
         }
         sidebarMenu.removeClass('active-menu');
         $(this).addClass('active-menu');
+        addMarker.setMap(null);
     });
 });
 

@@ -27,7 +27,7 @@
 
 #sidebar .sidebar-logo {
     text-align: center;
-    border-bottom: 3px solid #838383;
+    /*border-bottom: 3px solid #838383;*/
     display: table;
     height: 100px;
 }
@@ -120,7 +120,7 @@
 #sidebar-header {
     width: 300px;
     height: 100px;
-    border-bottom: 3px solid #838383;
+    /*border-bottom: 3px solid #838383;*/
     display: table;
     background-color: #323232;
 }

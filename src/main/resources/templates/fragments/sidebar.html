@@ -13,7 +13,9 @@
                     <i class='bx bx-search'></i>
                 </button>
                 <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                    <i class='bx bx-star' ></i>
+<!--                    <i class='bx bx-star' ></i>-->
+                    <i class="bx bx-plus-circle"></i>
+<!--                    <box-icon name='plus-circle'></box-icon>-->
                 </button>
                 <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                     <i class='bx bx-user' ></i>
@@ -44,16 +46,17 @@
                     </fieldset> -->
                 </div>
                 <div class="tab-pane" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <th:block th:replace="views/menu/search :: searchFragment"></th:block>
+                    <th:block th:replace="views/menu/bookmark :: bookmarkFragment"></th:block>
                 </div>
                 <div class="tab-pane" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                 나는 사라미야
                 </div>
                 <div class="tab-pane" id="v-pills-note" role="tabpanel" aria-labelledby="v-pills-note-tab">
-                    메모장
+                메모장
                 </div>
                 <div class="tab-pane" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                 나는 바퀴톱니야
+                <span th:text="${say}"></span>
                 </div>
             </div>
           </div>

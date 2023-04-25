@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-</body>
+<th:block th:fragment="bookmarkFragment">
+
+    <span th:text="${say}"></span>
+    this is bookmark area
+
+    <span>상호명</span></span><input type="text"><br/>
+    <span>주소</span><input type="text">
+    <button>등록</button>
+    <span class="lat-text"></span>/<span class="lng-text"></span>
+    
+
 </html>
