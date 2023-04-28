@@ -45,24 +45,24 @@ function naverMapInit() {
     if ($('#v-pills-profile-tab').hasClass('active')) {
 
 
-     naver.maps.Service.reverseGeocode({
-      
-       coords: e.coord,
-       // location: new naver.maps.LatLng(e.coord.lat(), e.coord.lng()),
-     }, function (status, response) {
-       if (status !== naver.maps.Service.Status.OK) {
-         return alert('Something wrong!');
-       }
-
-       var result = response.result, // 검색 결과의 컨테이너
-         items = result.items; // 검색 결과의 배열
-
-       console.log("items :: ", items);
-
-       // do Something
-     });
-
-     return;
+//     naver.maps.Service.reverseGeocode({
+//
+//       coords: e.coord,
+//       // location: new naver.maps.LatLng(e.coord.lat(), e.coord.lng()),
+//     }, function (status, response) {
+//       if (status !== naver.maps.Service.Status.OK) {
+//         return alert('Something wrong!');
+//       }
+//
+//       var result = response.result, // 검색 결과의 컨테이너
+//         items = result.items; // 검색 결과의 배열
+//
+//       console.log("items :: ", items);
+//
+//       // do Something
+//     });
+//
+//     return;
 
 
       addMarker.setMap(map);
